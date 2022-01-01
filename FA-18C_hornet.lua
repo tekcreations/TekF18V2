@@ -712,6 +712,8 @@ local txt_OilPress_R = ""
 local txt_OilPress_R3 = ""
 local txt_RPM_L = ""
 local txt_RPM_R = ""
+local txt_RPM_L3 = ""
+local txt_RPM_R3 = ""
 local txt_TEMP_L = ""
 local txt_TEMP_R = ""
 local txt_Codes = ""
@@ -760,6 +762,8 @@ moduleBeingDefined.exportHooks[#moduleBeingDefined.exportHooks+1] = function()
 	txt_OilPress_R3	= "   "
 	txt_RPM_L		= "  "
 	txt_RPM_R		= "  "
+	txt_RPM_L3		= "   "
+	txt_RPM_R3		= "   "
 	txt_TEMP_L	 	= "   "
 	txt_TEMP_R	 	= "   "
 	txt_Codes	 	= "   "
@@ -809,6 +813,8 @@ moduleBeingDefined.exportHooks[#moduleBeingDefined.exportHooks+1] = function()
 	txt_OilPress_R3	= coerce_nil_to_string(ifei.txt_OilPress_R)
 	txt_RPM_L		= coerce_nil_to_string(ifei.txt_RPM_L)
 	txt_RPM_R		= coerce_nil_to_string(ifei.txt_RPM_R)
+	txt_RPM_L3		= coerce_nil_to_string(ifei.txt_RPM_L)
+	txt_RPM_R3		= coerce_nil_to_string(ifei.txt_RPM_R)
 	txt_TEMP_L		= coerce_nil_to_string(ifei.txt_TEMP_L)
 	txt_TEMP_R		= coerce_nil_to_string(ifei.txt_TEMP_R)
 	txt_Codes		= coerce_nil_to_string(ifei.txt_Codes)
@@ -1264,5 +1270,6 @@ defineString("IFEI_R_TEXTURE", function() return RTexture end, 1, "Integrated Fu
 defineString("IFEI_T", function() return txt_T end, 6, "Integrated Fuel/Engine Indicator (IFEI)", "T")
 defineString("IFEI_OIL_PRESS_L", function() return txt_OilPress_L end, 3, "Integrated Fuel/Engine Indicator (IFEI)", "OilPress_L")
 defineString("IFEI_OIL_PRESS_R", function() return txt_OilPress_R end, 3, "Integrated Fuel/Engine Indicator (IFEI)", "OilPress_R")
-
+defineString("IFEI_RPM_L", function() return txt_RPM_L end, 3, "Integrated Fuel/Engine Indicator (IFEI)", "RPM_L")
+defineString("IFEI_RPM_R", function() return txt_RPM_R end, 3, "Integrated Fuel/Engine Indicator (IFEI)", "RPM_R")
 BIOS.protocol.endModule()

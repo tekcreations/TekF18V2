@@ -4461,6 +4461,37 @@
                                                                                                                  "type": "string"
                                                                                                       } ]
                                                                                   },
+																				  
+																																																						"IFEI_RPM_L3": {
+                                                                                          "category": "Integrated Fuel/Engine Indicator (IFEI)",
+                                                                                      "control_type": "display",
+                                                                                       "description": "RPM_L",
+                                                                                        "identifier": "IFEI_RPM_L3",
+                                                                                            "inputs": [  ],
+                                                                                           "outputs": [ {
+                                                                                                              "address": 30048,
+                                                                                                          "description": "RPM_L",
+                                                                                                           "max_length": 3,
+                                                                                                               "suffix": "",
+                                                                                                                 "type": "string"
+                                                                                                      } ]
+                                                                                  },
+                                                                    "IFEI_RPM_R3": {
+                                                                                          "category": "Integrated Fuel/Engine Indicator (IFEI)",
+                                                                                      "control_type": "display",
+                                                                                       "description": "RPM_R",
+                                                                                        "identifier": "IFEI_RPM_R3",
+                                                                                            "inputs": [  ],
+                                                                                           "outputs": [ {
+                                                                                                              "address": 30052,
+                                                                                                          "description": "RPM_R",
+                                                                                                           "max_length": 3,
+                                                                                                               "suffix": "",
+                                                                                                                 "type": "string"
+                                                                                                      } ]
+                                                                                  },
+
+																				  
                                                               "IFEI_RPM_TEXTURE": {
                                                                                           "category": "Integrated Fuel/Engine Indicator (IFEI)",
                                                                                       "control_type": "display",
